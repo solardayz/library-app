@@ -1,9 +1,7 @@
-package com.cz.libraryapp.assignment.annotation;
+package com.cz.libraryapp.assignment.day1annotation;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.lang.reflect.Method;
 
 @RestController
 public class AnnotationCalculator {

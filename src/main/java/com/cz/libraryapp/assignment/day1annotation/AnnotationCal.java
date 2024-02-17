@@ -1,4 +1,4 @@
-package com.cz.libraryapp.assignment.annotation;
+package com.cz.libraryapp.assignment.day1annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
