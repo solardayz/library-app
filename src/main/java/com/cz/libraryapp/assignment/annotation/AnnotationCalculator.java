@@ -10,7 +10,7 @@ public class AnnotationCalculator {
 
     @GetMapping("/annotationSum")
     @AnnotationCal(numbers = {1, 2, 3, 4, 5})
-    public int annotationSum() throws NoSuchMethodException, ClassNotFoundException {
+    public int annotationSum() throws NoSuchMethodException {
         return AnnotationUtil.calculateSumForAnnotation(getClass(), "annotationSum");
     }
 
