@@ -13,7 +13,7 @@ public class FruitRequest {
     private final long price;
 
     public FruitRequest() {
-        this.id = 0;
+        this.id = -1;
         this.name = null;
         this.warehousingDate = null;
         this.price = 0;
