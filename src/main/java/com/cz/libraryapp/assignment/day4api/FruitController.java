@@ -14,9 +14,11 @@ public class FruitController {
 
     private List<Fruit> fruits = new ArrayList<>();
     private long makeId= 0L;
+
     @PostMapping("/fruit")
-    public void fruitCreate(@RequestBody FruitRequest request) {
+    public ResponseEntity<String> fruitCreate(@RequestBody FruitRequest request) {
         fruits.add(new Fruit(makeId++, request.getName(), request.getWarehousingDate(), request.getPrice(), false));
+        return ResponseEntity.ok("정상 처리 되었습니다.");
     }
 
     @PutMapping("/fruit")
